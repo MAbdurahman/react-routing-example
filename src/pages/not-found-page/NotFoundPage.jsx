@@ -13,7 +13,7 @@ export default class NotFoundPage extends Component {
                It looks like nothing was found at this location.
                Maybe try one of the links in the menu or press the back to home to button.
             </h4>
-            <Button className='notFoundPage__button'><a href='#'>Back to Home</a></Button>
+            <Button className='notFoundPage__button'><a href='/'>Back to Home</a></Button>
          </div>
       );
    };
