@@ -29,7 +29,7 @@
 body {
   overflow-x: hidden;
   width: 100vw;
-  height: fit-content;
+  height: 100vh;
   margin: 0;
   margin-bottom: 2em;
   -webkit-font-smoothing: antialiased;

@@ -1,16 +1,22 @@
 .notFoundPage {
+   width: 98%;
+   height: 75%;
+   margin: .75em auto;
    display: flex;
    flex-direction: column;
+
 }
 
 .notFoundPage__Title {
    margin-top: 1em;
    font-size: 8rem;
    letter-spacing: 34px;
+   text-align: center;
 }
 
 .notFoundPage__subTitle {
    font-size: 2rem;
+   text-align: center;
 }
 
 .notFoundPage__description {
@@ -18,6 +24,7 @@
    margin-top: .75em;
    margin-left: auto;
    margin-right: auto;
+   text-align: center;
 }
 
 .notFoundPage__button {
@@ -32,23 +39,28 @@
    -moz-border-radius: 5px;
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
-   -webkit-transition: all 0.1s;
-   -moz-transition: all 0.1s;
-   transition: all 0.1s;
+
+   transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -webkit-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -moz-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -ms-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -o-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
    -webkit-box-shadow: 0px 6px 0px #6e6c6a;
    -moz-box-shadow: 0px 6px 0px #6e6c6a;
    box-shadow: 0px 6px 0px #6e6c6a;
 }
+
 .notFoundPage__button:hover a {
-  color: #EBC670;
-  text-transform: capitalize;
+   color: #EBC670;
+   text-transform: capitalize;
 }
+
 .notFoundPage__button:active {
-      -webkit-box-shadow: 0px 2px 0px #6e6c6a;
-      -moz-box-shadow: 0px 2px 0px #6e6c6a;
-      box-shadow: 0px 2px 0px #6e6c6a;
-      position:relative;
-      top:4px;
+   -webkit-box-shadow: 0px 2px 0px #6e6c6a;
+   -moz-box-shadow: 0px 2px 0px #6e6c6a;
+   box-shadow: 0px 2px 0px #6e6c6a;
+   position: relative;
+   top: 4px;
 }
 
 .notFoundPage__button a {

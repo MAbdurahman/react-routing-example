@@ -1,0 +1,125 @@
+.github {
+   margin: 0 auto;
+   font-size: 3rem;
+}
+
+.githubLoader {
+   margin: 0 auto;
+}
+
+.githubSection {
+   width: 66.667%;
+   margin: 1em auto;
+}
+
+.githubSubheading {
+   text-align: center;
+   margin-bottom: 1em;
+   font-size: 1.5rem;
+}
+
+.githubMedia {
+   margin: .5em auto;
+   width: 50%;
+   display: flex;
+   justify-self: center;
+   align-items: flex-start;
+   font-size: 1.25rem;
+}
+
+.githubMediaBody {
+   margin-left: 10px;
+}
+
+.githubForm {
+   width: fit-content;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.githubForm FormGroup {
+   border: 1px solid #444;
+
+}
+
+.githubInput {
+   height: 50px;
+   font-size: 1.5rem;
+   padding: 10px;
+}
+
+.githubButton {
+   height: 50px;
+   font-size: 1.5rem;
+   padding: 10px;
+   background-color: #444;
+   color: antiquewhite;
+   transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -webkit-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -moz-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -ms-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -o-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   cursor: pointer;
+}
+
+.githubButton:hover {
+   transform: scale(1.0125);
+   background-color: #444;
+   color: #EBC670;
+   -webkit-transform: scale(1.0125);
+   -moz-transform: scale(1.0125);
+   -ms-transform: scale(1.0125);
+   -o-transform: scale(1.0125);
+}
+
+/*table portrait layout (768px to 1024px) */
+@media only screen and (max-width: 1024px) {
+
+   /*... tablet portrait styles */
+   .githubSection {
+      width: 90%;
+   }
+
+}
+
+/*mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+
+   /*...mobile landscape styles */
+   .githubMedia {
+      width: 90%;
+      margin-left: 5em;
+   }
+}
+
+/*mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+
+   /*...mobile portrait styles */
+   .githubSubheading {
+      font-size: 1.25rem;
+   }
+
+   .githubMedia {
+      margin-left: .5em;
+   }
+
+
+   .githubInput {
+      width: 60%;
+      height: 30px;
+      font-size: 1rem;
+      padding: 5px;
+   }
+
+   .githubButton {
+      width: 30%;
+      height: 30px;
+      font-size: 1rem;
+      padding: 5px;
+   }
+}
