@@ -1,6 +1,7 @@
 .github {
    margin: 1em auto;
    font-size: 3rem;
+   overflow-y: auto;
 }
 
 .githubLoader {
@@ -9,8 +10,11 @@
 
 .githubSection {
    width: 66.667%;
-   height: 75%;
+   height: 50%;
+   overflow: auto;
    margin: 1em auto;
+   padding-bottom: 1.25em;
+
 }
 
 .githubSubheading {

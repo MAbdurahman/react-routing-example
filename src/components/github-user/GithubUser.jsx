@@ -78,7 +78,6 @@ export default class GithubUser extends Component {
                   />
                   <Button className='githubButton' type='submit'>Search</Button>
                </FormGroup>
-
             </Form>
             <section className='githubSection'>
                <h3 className='githubSubheading'>GitHub Users Results</h3>
