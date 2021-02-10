@@ -1,5 +1,5 @@
 .github {
-   margin: 0 auto;
+   margin: 1em auto;
    font-size: 3rem;
 }
 
@@ -9,6 +9,7 @@
 
 .githubSection {
    width: 66.667%;
+   height: 75%;
    margin: 1em auto;
 }
 

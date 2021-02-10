@@ -1,7 +1,8 @@
 .homepage {
    width: 90%;
-   height: 75%;
+   /* height: 75%; */
    margin: .75em auto;
+   margin-top: 5em;
    margin-bottom: 0;
    padding-top: 5em;
    padding-bottom: 5em;
@@ -40,6 +41,7 @@
    letter-spacing: 2px;
    background-color: rgb(14, 13, 13);
    color: #EBC670;
+   text-decoration: none;
    border-radius: 5px;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;

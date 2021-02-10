@@ -14,6 +14,7 @@ export default class HomePage extends Component {
                <p className='homepage__buttonContainer'>
                   <Button
                   className='homepage__button'
+                  href='/github'
                   >
                      Explore more
                   </Button>
