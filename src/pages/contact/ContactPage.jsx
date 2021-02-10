@@ -77,7 +77,7 @@ export default class ContactPage extends Component {
                      <div>
                         <Field
                            className='contactPage__message'
-                           as='textArea'
+                           as='textarea'
                            type='text'
                            name='message'
                            placeholder='message'
