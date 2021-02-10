@@ -3,53 +3,45 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 import './ContactPage.css';
 
 export default class ContactPage extends Component {
-   // constructor(props) {
-   //    super(props);
 
-   // }
 
    render() {
       const name_pattern = /^([a-zA-Z]{2,}\s[a-zA-z]{1,}'?-?[a-zA-Z]{1,}\s?([a-zA-Z]{1,})?)/i;
       const email_pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-      const password_pattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[-+_!@#$%^&*?]).{8,}$/i;
-      const lowercase_pattern = /^(?=.*[a-z])/g;
-      const uppercase_pattern = /^(?=.*[A-Z])/g;
-      const digit_pattern = /^(?=.*\d{1,})/g;
-      const special_pattern = /(?=.*[-+_!@#$%^&*?])/g;
-      // const message_pattern =/^(?={30,})$/i;
+      const required_message_length = 30;
+      const max_message_length = 140;
 
       return (
          <div className='contactPage'>
             <h2 className='contactPage__heading'>Contact Us</h2>
             <Formik
-               initialValues={{ name: '', email: '', password: '' }}
+               initialValues={{ name: '', email: '', message: '' }}
                validate={values => {
                   let errors = {};
+                  if (!values.name) {
+                     errors.name = 'First and last name required!';
+
+                  } else if (!name_pattern.test(values.name)) {
+                     errors.name = 'Enter first and last name only!';
+
+                  }
                   if (!values.email) {
                      errors.email = 'Email is required!';
 
                   } else if (!email_pattern.test(values.email)) {
-                     errors.email = 'Invalid email address!';
+                     errors.email = 'Enter a valid email address!';
                   }
 
-                  if (!values.password) {
-                     errors.password = 'Password is required!';
+                  if (!values.message) {
+                     errors.message = 'Message is required!';
 
-                  } else if (!lowercase_pattern.test(values.password)) {
-                     errors.password = 'Password must have a lowercase character!';
+                  } else if (required_message_length > values.message.length) {
+                     let charactersLeft = (required_message_length - values.message.length);
+                     errors.message = `${charactersLeft} more characters required in message!`;
 
-                  } else if (!uppercase_pattern.test(values.password)) {
-                     errors.password = 'Password must have an uppercase character!';
-
-                  } else if (!digit_pattern.test(values.password)) {
-                     errors.password = 'Password must have a digit character!';
-
-                  } else if (!special_pattern.test(values.password)) {
-                     errors.password = `Password must include at least one: '-+_!@#$%^&*?'`;
-
-                  } else if (!password_pattern.test(values.password)) {
-                     errors.password = 'Password must have at least 8 characters!';
-
+                  } else if (values.message.length > max_message_length) {
+                     let tooMany = (values.message.length - max_message_length);
+                     errors.message = `Message has ${tooMany} character(s) too many!`;
                   }
 
                   return errors;
@@ -66,7 +58,7 @@ export default class ContactPage extends Component {
                   <Form>
                      <div>
                         <Field
-                        as='input'
+                           as='input'
                            type='text'
                            name='name'
                            placeholder='first and last name'
@@ -75,7 +67,7 @@ export default class ContactPage extends Component {
                      </div>
                      <div>
                         <Field
-                        as='input'
+                           as='input'
                            type='email'
                            name='email'
                            placeholder='email address'
@@ -84,13 +76,13 @@ export default class ContactPage extends Component {
                      </div>
                      <div>
                         <Field
-                        className='contactPage__message'
-                        as='textArea'
+                           className='contactPage__message'
+                           as='textArea'
                            type='text'
                            name='message'
                            placeholder='message'
                         />
-                        <ErrorMessage name='password' component='span' />
+                        <ErrorMessage name='message' component='span' />
                      </div>
                      <button className='contactPage__button' type='submit' disabled={isSubmitting}>
                         Send message
