@@ -5,7 +5,7 @@ import HomePage from './../../pages/home-page/HomePage';
 import GithubUser from './../github-user/GithubUser';
 import NotFoundPage from './../../pages/not-found-page/NotFoundPage';
 import ContactPage from './../../pages/contact/ContactPage';
-import { Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 export default class Header extends Component {
    render() {

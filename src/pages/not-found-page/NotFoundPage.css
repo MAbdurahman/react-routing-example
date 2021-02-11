@@ -8,22 +8,25 @@
 }
 
 .notFoundPage__Title {
-   margin-top: 1em;
+   margin-top: .5em;
    font-size: 8rem;
    letter-spacing: 34px;
    text-align: center;
+   text-shadow: 7px 3px 7px #6e6c6a;
 }
 
 .notFoundPage__subTitle {
-   font-size: 2rem;
+   font-size: 1.5rem;
+   font-weight: 800;
    text-align: center;
 }
 
 .notFoundPage__description {
-   width: 40%;
-   margin-top: .75em;
+   width: 45%;
+   margin-top: .1em;
    margin-left: auto;
    margin-right: auto;
+   font-size: 1.4rem;
    text-align: center;
 }
 
@@ -53,6 +56,16 @@
 .notFoundPage__button:hover a {
    color: #EBC670;
    text-transform: capitalize;
+}
+
+.btn-primary {
+   background-color: #444 !important;
+   border: 2px solid #444;
+}
+
+.btn-primary:hover {
+   background-color: #444 !important;
+   border-color: #444 !important;
 }
 
 .notFoundPage__button:active {
