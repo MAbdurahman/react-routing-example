@@ -1,26 +1,41 @@
 .github {
-   margin: 1em auto;
+   width: 50%;
+   margin: 2em auto;
+   margin-top: 3em;
    font-size: 3rem;
    overflow-y: auto;
+}
+
+.form-group {
+   display: flex;
+   flex-direction: row;
+}
+
+.github.form-control:focus {
+   border-color: #444;
+   box-shadow: none;
+   outline: none;
 }
 
 .githubLoader {
    margin: 0 auto;
 }
 
-.githubSection {
-   width: 66.667%;
-   height: 50%;
-   overflow: auto;
-   margin: 1em auto;
+section.githubSection {
+   width: 550px;
+   height: 400px;
+   overflow-y: auto;
+   margin: .25em;
+   margin-left: 2em;
    padding-bottom: 1.25em;
 
 }
 
 .githubSubheading {
    text-align: center;
-   margin-bottom: 1em;
-   font-size: 1.5rem;
+   margin-bottom: .5em;
+   font-size: 1.75rem;
+   font-weight: 600;
 }
 
 .githubMedia {
@@ -57,6 +72,12 @@
    padding: 10px;
 }
 
+.githubInput.form-control {
+   border-color: #444;
+   box-shadow: none;
+   outline: none;
+}
+
 .githubButton {
    height: 50px;
    font-size: 1.5rem;
@@ -79,6 +100,21 @@
    -moz-transform: scale(1.0125);
    -ms-transform: scale(1.0125);
    -o-transform: scale(1.0125);
+}
+
+.githubButton.btn-primary {
+   border-color: #444;
+   outline-color: #444;
+}
+
+.githubButton.btn-primary:focus,
+.githubButton.btn-primary:hover {
+   background-color: #444;
+   color: #EBC670;
+   border-color: #444;
+   box-shadow: none;
+   outline: none;
+
 }
 
 /*table portrait layout (768px to 1024px) */
