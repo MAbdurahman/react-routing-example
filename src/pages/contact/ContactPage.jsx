@@ -9,7 +9,7 @@ export default class ContactPage extends Component {
       const name_pattern = /^([a-zA-Z]{2,}\s[a-zA-z]{1,}'?-?[a-zA-Z]{1,}\s?([a-zA-Z]{1,})?)/i;
       const email_pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
       const required_message_length = 30;
-      const max_message_length = 140;
+      const max_message_length = 101;
 
       return (
          <div className='contactPage'>
