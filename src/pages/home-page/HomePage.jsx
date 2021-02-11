@@ -16,7 +16,7 @@ export default class HomePage extends Component {
                   className='homepage__button'
                   href='/github'
                   >
-                     Explore more
+                     Explore More
                   </Button>
                </p>
             </Jumbotron>

@@ -58,12 +58,12 @@
    text-transform: capitalize;
 }
 
-.btn-primary {
+.notFoundPage__button.btn-primary {
    background-color: #444 !important;
    border: 2px solid #444;
 }
 
-.btn-primary:hover {
+.notFoundPage__button.btn-primary:hover {
    background-color: #444 !important;
    border-color: #444 !important;
 }
