@@ -16,7 +16,7 @@ export default class Header extends Component {
                   <Navbar.Brand className='header__brand' href='/'>Brand Name</Navbar.Brand>
                   <div className='navbar__spacer'></div>
                   <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                  <Navbar.Collapse id='basic-navbar-nav' >
+                  <Navbar.Collapse id='basic-navbar-nav'>
                      <Nav className='header__list'>
                         <Nav.Link className='header__items' href='/'>Home</Nav.Link>
                         <Nav.Link className='header__items' href='/github'>Github</Nav.Link>

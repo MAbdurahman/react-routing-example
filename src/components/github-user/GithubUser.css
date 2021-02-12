@@ -4,6 +4,7 @@
    margin-top: 3em;
    font-size: 3rem;
    overflow-y: auto;
+   overflow-x: none;
 }
 
 .form-group {
@@ -25,8 +26,9 @@ section.githubSection {
    width: 550px;
    height: 400px;
    overflow-y: auto;
+   overflow-x: none;
    margin: .25em;
-   margin-left: 2em;
+   margin-left: .25em;
    padding-bottom: 1.25em;
 
 }
